@@ -9,7 +9,7 @@
   <li id="sfo" class="west">San Francisco</li>
 </ul>
 
-<script>
+<!--<script>
   for (let i = 1; i <= 100; i++) {
 
   if (i % 5 === 0 && i % 3 === 0) {
@@ -23,4 +23,22 @@
   }
   
   }
+</script>-->
+
+<script>
+  list = document.getElementById("cities_list");
+
+  let den = document.createElement("li")
+
+  let den_text = document.createTextNode("Denver")
+
+  den.append(den_text)
+
+  den.style.backgroundColor = "orange"
+
+  den.className = "west"
+
+  den.id = "den"
+
+  list.prepend(den)
 </script>
